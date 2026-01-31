@@ -1,0 +1,2 @@
+# Kinolashamz
+Kino bot
