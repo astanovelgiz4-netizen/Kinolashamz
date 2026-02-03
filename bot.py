@@ -3,7 +3,7 @@ import sqlite3, random
 
 TOKEN = "8561825405:AAHajSoNKlop2WXFwV_2NEw4-75x4W5fFfc"
 ADMIN_ID = 6884014716
-CHANNEL = "@kanal_nomi"   # majburiy obuna kanali
+CHANNEL = "@kinolashamz"   # majburiy obuna kanali
 
 bot = Bot(TOKEN)
 dp = Dispatcher(bot)
@@ -145,12 +145,12 @@ async def save_order(msg: types.Message):
 # ===== MUROJAAT =====
 @dp.message_handler(text="📩 Murojaat")
 async def contact(msg: types.Message):
-    await msg.answer("📩 Admin: @Its_Erkinov")
+    await msg.answer("📩 Admin: @erk1n0vee")
 
 # ===== ADMIN PANEL =====
 @dp.message_handler(commands=["panel"])
 async def panel(msg: types.Message):
-    if msg.from_user.id != ADMIN_ID:
+    if msg.from_user.id != ADMIN_ID: 6884014716
         return
     await msg.answer(
         "👑 ADMIN PANEL\n\n"
@@ -162,7 +162,7 @@ async def panel(msg: types.Message):
 
 @dp.message_handler(commands=["add"])
 async def add(msg: types.Message):
-    if msg.from_user.id != ADMIN_ID:
+    if msg.from_user.id != ADMIN_ID: 6884014716
         return
     try:
         d = msg.text.replace("/add","").split("|")
@@ -175,7 +175,7 @@ async def add(msg: types.Message):
 
 @dp.message_handler(commands=["orders"])
 async def orders(msg: types.Message):
-    if msg.from_user.id != ADMIN_ID:
+    if msg.from_user.id != ADMIN_ID: 6884014716
         return
     data = sql.execute("SELECT text FROM orders").fetchall()
     if not data:
