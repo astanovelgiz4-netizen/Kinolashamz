@@ -58,7 +58,7 @@ async def start(msg: types.Message):
         btn = types.InlineKeyboardMarkup().add(
             types.InlineKeyboardButton(
                 "➕ Obuna bo‘lish",
-                url=f"https://t.me/{CHANNEL[1:]}"
+                url=f"https://t.me/{kinolashamz[1:]}"
             )
         )
         await msg.answer("❗ Avval kanalga obuna bo‘ling", reply_markup=btn)
